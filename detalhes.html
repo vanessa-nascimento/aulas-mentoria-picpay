@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <title>Curso de HTML - Página de detalhes</title>
+    </head>
+
+    <body>
+        <h1>Aqui é a página de detalhes</h1>
+
+        <div style="border:1px solid red;">
+            <img 
+                src="gustavo-scafeli-89JtJtO7d4E-unsplash.jpg" 
+                height="200" 
+                alt="Cachorro salsicha"
+                title="Cachorro salsicha" />
+
+            <p>Imagem do cachorro</p>
+        </div>
+        
+        <p>Lorem ipsum dolor sit amet, <span style="color:red;">consectetur adipiscing elit.</span></p>
+
+        <!-- o form indica que aqui vou fazer um formulário -->
+        <form>
+
+            <!-- o fieldset indica que quero agrupar campos relacionados -->
+            <fieldset>
+                <legend>Informações pessoais</legend>
+
+                <div>
+                    <label for="nome">Nome:</label>
+                    <input 
+                        type="text" 
+                        id="nome" 
+                        name="nome"
+                        placeholder="Insira seu nome aqui">
+                </div>
+
+                <div>
+                    <label for="idade">Idade:</label>
+                    <input 
+                        type="number"
+                        id="idade"
+                        name="idade"
+                        placeholder="Insira sua idade aqui">
+                </div>
+
+                <p>Sexo: </p>
+                <!-- radio button serve para selecionar um campo ou outro, pois são relacionados e só podemos escolher uma opção, como nesse caso -->
+                <div>
+                    <label for="feminino">Feminino</label>
+                    <input 
+                        type="radio"
+                        id="feminino"
+                        name="sexo"
+                        value="Feminino">
+                </div>
+                <!-- o name dos radio buttons precisam ser iguais!! -->
+                <div>
+                    <label for="mas">Masculino</label>
+                    <input 
+                        type="radio"
+                        id="mas"
+                        name="sexo"
+                        value="Masculino">
+                </div>
+
+            </fieldset>
+
+            <!-- o type checkbox é possível selecionar mais de uma opção -->
+            <h2>Frutas</h2>
+            <div>
+                <label for="banana">Banana</label>
+                <input 
+                    type="checkbox"
+                    id="banana"
+                    name="banana"
+                    value="banana">
+            </div>
+
+            <div>
+                <label for="laranja">Laranja</label>
+                <input 
+                    type="checkbox"
+                    id="laranja"
+                    name="laranja"
+                    value="laranja">
+            </div>
+
+            <div>
+                <!-- por conta do readonly, o usuário não poderá mexer no campo -->
+                <label for="visual">Informação adicional que não quero que o usuário preencha</label>
+                <input 
+                    type="number"
+                    id="visual"
+                    name="visual"
+                    placeholder="Não mexa aqui" readonly>
+            </div>
+
+            <fieldset>
+
+                <legend>Login</legend>
+
+                <div>
+                    <label for="user">Usuário:</label>
+                    <input 
+                        type="text" 
+                        id="user" 
+                        name="user">
+                </div>
+
+                <div>
+                    <!-- para senhas, usamos o type password -->
+                    <label for="senha">Senha:</label>
+                    <input 
+                        type="password"
+                        id="senha"
+                        name="senha">
+                </div>
+
+            </fieldset>
+
+            <!-- Campo que selecionamos uma opção no estilo de dropdown -->
+            <select name="cor" id="cor">
+                <option value="azul">Azul</option>
+                <option value="vermelho">Vermelho</option>
+                <option value="Amarelo">Amarelo</option>
+            </select>
+            
+            <!-- aqui é um botão que não possui ação, por enquanto! -->
+            <button type="button">
+                Botão normal
+            </button>
+
+            <!-- aqui é um campo do tipo submit, ou seja, ele vai ser um botão que vai enviar os valores por formulário -->
+            <input type="submit" value="Enviar">
+        </form>
+    
+    </body>
+
+</html>
