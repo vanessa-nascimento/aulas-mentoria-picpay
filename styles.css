@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+
+* {
+    font-size: 1em;
+    font-family: 'Dancing Script', cursive;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: burlywood;
+}
+p {
+   color: #11E9FF; 
+   text-align: right;
+}
+p#paragrafo-cachorro {
+    color: blueviolet;
+    text-align: left;
+}
+p.paragrafo-gato {
+    color: red;
+    text-transform: lowercase;
+}
+
+p.paragrafo-gato {
+    color: rgba(88, 24, 69, 0.8);
+    text-align: center;
+}
+
+p.paragrafo-gato > a {
+    color: blue;
+}
+
+p#paragrafo-cachorro a.link-pp{
+    color: darkcyan;  
+}
+
+p#paragrafo-cachorro a.link-pp:hover {
+    color: darkmagenta;
+    box-shadow: 10px 5px 10px darkmagenta;
+}
+
+button.btn-vanessa {
+    padding: 10px 20px;
+    margin: 40px;
+}
+
+.paragrafo-gato, #paragrafo-cachorro {
+    font-size: 45px;
+    border: 1px solid #11E9FF;
+}
+
+a[title] {
+    font-family: 'Arial';
+}
+
+a[href="#"] {
+    text-transform: uppercase;
+}
+
+a[href*="picpay"] {
+    font-family: 'Arial';
+    font-weight: bold;
+} 
+
+
+a[href$=".com"] {
+    font-family: 'Dancing Script', cursive;
+    font-weight: 100;
+} 
