@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <title>O que é CSS?</title>
+        <link rel="stylesheet" href="style-exercicio-css-1.css">
+    </head>
+
+
+    <body>
+        <main>
+            <h1 class="c-title">O que CSS?</h1>
+            <p>
+                CSS (Folha de Estilo em Cascata) é o código que você usa para dar estilo à sua página Web. CSS básico apresenta tudo que você precisa para começar. Responderemos a perguntas do tipo: Como mudo meu texto para preto ou vermelho? Como faço para que meu conteúdo apareça em determinados lugares na tela? Como decoro minha página com imagens e cores de fundo?
+            </p>
+            <h2 class="c-subtitle">Então, o que realmente é CSS?</h2>
+            <p>
+                Assim como o HTML, o CSS não é realmente uma linguagem de programação. Também não é uma linguagem de marcação  — é uma linguagem de folhas de estilos. Isso significa que o CSS permite aplicar estilos seletivamente a elementos em documentos HTML. Por exemplo, para selecionar todos os elementos parágrafo de uma página HTML e tornar o texto dentro deles vermelho, você escreveria este CSS:
+            </p>
+            <div class="block-code">
+                <p class="c-code">
+                p {
+                    color: red;
+                }
+                </p>
+            </div>
+            <p>
+                Vamos tentar: cole as três linhas de CSS acima em um novo arquivo, no seu editor de texto, e salve o arquivo como estilo.css na sua pasta estilos.
+            </p>
+            <p>
+                Ainda assim, precisamos aplicar o CSS ao seu documento HTML. Do contrário, o estilo CSS não irá afetar a maneira como o seu navegador mostra seu documento HTML (se você não estiver acompanhando o nosso projeto, leia Lidando com arquivos e HTML básico para descobrir o que você precisa fazer primeiro).
+            </p>
+
+            <ol class="c-list">
+                <li>
+                    Abra seu arquivo index.html e coloque a <span class="c-contrast">tag link com rel stylesheet e href com endereço para sua folha de estilo</span>, em algum lugar no cabeçalho, ou seja, entre as tags head;
+                </li>
+                <li>
+                    Salve o arquivo index.html e abra ele no seu navegador. Você deve ver uma página como essa:
+                </li>
+            </ol>
+            <img class="c-image" src="./assets/website-screenshot-styled.png" alt="Mozilla is cool page web">
+        </main>
+    </body>
+</html>
